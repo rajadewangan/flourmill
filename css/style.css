@@ -1,0 +1,96 @@
+/* css propety to all  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* hearder decoration  */
+header::before
+{
+}
+header{
+    width: 100vw;
+    height: 8rem;
+    background-color: #D8EFEB;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+#headerImg{
+    height: 100%;
+}
+#headerImg a{
+    cursor: default;
+}
+#headerImg img{
+    height:119%;
+    
+}
+#headerName 
+{
+    width: 26rem;
+}
+#headerName p
+{   
+    width: 100%;
+    color: #FC9300;
+    line-height: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+#headerLocation{
+    
+    width: 8rem;
+
+}
+#headerLocation p{
+    text-align: -webkit-center;
+}
+
+
+/* footer decoration  */
+footer{
+    width: 100vw;
+    height: 6rem;
+    background-color: #D8EFEB;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer > p:first-of-type{
+    color: #FF3C3C;
+}
+
+footer > section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > section p{
+    margin: 0rem 2rem;
+    text-align: center;
+    width: 13rem;
+}
+
+ /* login page styling  */
+ .rounded-t-5 {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  @media (min-width: 992px) {
+    .rounded-tr-lg-0 {
+      border-top-right-radius: 0;
+    }
+
+    .rounded-bl-lg-5 {
+      border-bottom-left-radius: 0.5rem;
+    }
+  }
