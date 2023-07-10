@@ -11,8 +11,8 @@ require_once("./import/header.php");
       </div>
       <div class="col-lg-8">
         <div class="card-body py-5 px-md-5">
-
-          <form method="post">
+           
+          <form method="post" action="./bgpage/checkLogin.php">
             <!-- Email input -->
             <div class="form-outline mb-4">
               <input type="email" name="email" id="email" class="form-control" />

@@ -1,7 +1,7 @@
 <?php
 $email = $_REQUEST['email'];
 $password = $_REQUEST['password'];
-require_once("dbconnect.php");
+require_once("../import/dbconnect.php");
 
 $query1 = "SELECT * FROM `owner_info` WHERE owner_email = '$email'";
 $rsowner = mysqli_query($con, $query1);
