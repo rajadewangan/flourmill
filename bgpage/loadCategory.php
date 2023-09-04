@@ -9,4 +9,7 @@ if(mysqli_num_rows($rsCategory)>0)
         
     }
 }
+else{
+    echo("1");
+}
 ?>

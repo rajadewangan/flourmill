@@ -94,3 +94,37 @@ footer > section p{
       border-bottom-left-radius: 0.5rem;
     }
   }
+
+  /* adminmenu page styling  */
+  main{
+    width: 100vw;
+    min-height: 27.5rem;
+    background-color: #EDEDED;
+    display: flex;
+    padding: 1rem;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .cat{
+    width: 6rem;
+    height: 9rem;
+    background-color: #FFFFFF;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.1rem solid black;
+  }
+
+  #addCat{
+    background-color: #E0DAD2;
+       
+  }
+  
+  #categoryForm{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 90vw;
+    justify-content: space-around;
+  }

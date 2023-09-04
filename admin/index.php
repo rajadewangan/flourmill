@@ -1,6 +1,15 @@
-<?php
-require_once("./import/header.php");
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+
 <!-- Section: Design Block -->
 <section class=" text-center text-lg-start">
  <div class="card mb-3">
@@ -15,7 +24,7 @@ require_once("./import/header.php");
           <form method="post" action="./bgpage/checkLogin.php">
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" name="email" id="email" class="form-control" />
+              <input type="email" name="email" id="email" class="form-control" required />
               <label class="form-label" for="email">Email address</label>
             </div>
 
@@ -53,6 +62,8 @@ require_once("./import/header.php");
 </section>
 <!-- Section: Design Block -->
 
-<?php
-require_once("./import/footer.php");
-?>
+<script src="../js/checkLogin.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</html>
