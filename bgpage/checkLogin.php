@@ -1,4 +1,6 @@
 <?php
+@session_start();
+
 $email = $_REQUEST['email'];
 $password = $_REQUEST['password'];
 require_once("../import/dbconnect.php");
@@ -11,6 +13,7 @@ if(mysqli_num_rows($rsowner) == 1) {
     $rsowner = mysqli_query($con, $query2);
 
     if(mysqli_num_rows($rsowner) == 1) {
+        $_SESSION['username']=$email;
         echo "3";
     } else {
         echo "2";

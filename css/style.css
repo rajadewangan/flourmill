@@ -25,7 +25,7 @@ header{
     cursor: default;
 }
 #headerImg img{
-    height:119%;
+    height:9rem;
     
 }
 #headerName 
@@ -74,9 +74,10 @@ footer > section{
 }
 
 footer > section p{
-    margin: 0rem 2rem;
-    text-align: center;
-    width: 13rem;
+  margin: 0rem 2rem;
+  text-align: center;
+  width: 13rem;
+  font-size: .8rem;
 }
 
  /* login page styling  */
@@ -97,22 +98,31 @@ footer > section p{
 
   /* adminmenu page styling  */
   main{
+ 
     width: 100vw;
     min-height: 27.5rem;
     background-color: #EDEDED;
     display: flex;
     padding: 1rem;
     align-content: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
-  }
+    flex-direction: row;
+    flex-wrap: wrap;
+}
   .cat{
+    
+   
     width: 6rem;
     height: 9rem;
-    background-color: #FFFFFF;
     background-color: white;
     border-radius: 5px;
     border: 0.1rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   #addCat{
@@ -127,4 +137,31 @@ footer > section p{
     align-items: center;
     width: 90vw;
     justify-content: space-around;
+  }
+
+  /* category display div styling  */
+  .cat img 
+  {
+    width: 80%;
+    height: 40%;
+    margin-bottom: 0.4rem;
+    border: 2px solid black;
+  }
+
+  .cat p{
+    margin-bottom: 0rem;
+  }
+
+  @media (max-width: 768px){
+    header {
+      font-size: .7rem; /* Adjust font size for smaller screens */
+  }
+  }
+  @media (max-width: 462px){
+    #headerName p{
+      font-size: 2rem;
+    }
+    #headerImg img{
+      height: 6rem;
+    }
   }
